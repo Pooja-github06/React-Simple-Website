@@ -1,0 +1,203 @@
+
+.example {
+    background-color: #eee;
+    width: 200px;
+    height: 100px;
+    border: 1px dotted black;
+}
+
+/* .Tabs::-webkit-scrollbar {
+    display: none;
+} */
+.Tabs {
+    /* overflow-y: scroll;  */
+    /* Add the ability to scroll */
+    /* overflow: scroll;
+    height: '100%';
+     width: '100%';
+    height: auto; */
+    /* overflow: scroll; */
+    /* height: 100%; */
+    /* min-height: 400px; */
+    /* background: #053742; */
+    /* margin: 3.5rem auto 1.5rem; */
+    /* padding: 2rem 1rem; */
+    /* color: #E8F0F2; */
+    /* height: '100%';
+    width: '100%'; */
+    border-radius: 2rem;
+    @media (max-width: 769px) {
+        padding: 2rem 0;
+       
+    }
+    margin-bottom: 10px;
+}
+
+/* Tab Navigation */
+ul.nav {
+    border-bottom: 1px solid;
+    width: 100%;
+    margin: 0 auto 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid #39A2DB; */
+    /* border-radius: 2rem; */
+    padding-left: 0px;
+    @media (max-width: 768px) {
+        width: 90%;
+    }
+}
+ul.nav li {
+    /* background: #39A2DB; */
+    font-size: 20px;
+    font-style: normal;
+    width: 50%;
+    padding: 1rem;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.7s;
+    /* border-bottom-left-radius: 2rem;
+    border-top-left-radius: 2rem; */
+}
+ul.nav li:nth-child(2) {
+    border-radius: 0;
+    /* border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem; */
+}
+
+/* ul.nav li:hover {
+    color: #39A2DB;
+    border-bottom: 3px solid #39A2DB;
+    /* background: rgba(50, 224, 196, 0.15); */
+ul.nav li.active {
+    background: #0E4681;
+    color: white;
+}
+
+/* .
+ 
+  FirstTab  {
+  font-size: 2rem;
+  text-align: center;
+  overflow: 'scroll'
+} */
+.SecondTab {
+    /* width: fit-content; */
+    width: 95%;
+    height: 100px;
+}
+.text {
+    /* margin-top: 1px; */
+    /* font-style: italic; */
+    margin-bottom: 2px;
+    color: rgb(0, 0, 0);
+    padding-left: 10px;
+}
+.inputs {
+    margin-top: '10%';
+}
+.textfield {
+    height: 100px;
+}
+.mybutton2 {
+    height: 20px;
+    width: 150px;
+    position: absolute;
+    bottom: 290;
+    background-color: #0E4681;
+    right: 50;
+    color: white;
+    margin: inherit;
+}
+.outlet {
+    overflow-y: scroll;
+    height: 276px;
+    /* position: relative;
+    bottom: 20px; */
+}
+.outlet::-webkit-scrollbar {
+    display: none;
+}
+.inputStyle {
+    font-style: italic;
+    border-bottom-color: black;
+    border-bottom: 1px solid lightgray;
+    border-bottom-width: 1px solid;
+    width: "90%";
+    /* border-bottom-right-radius: ;
+    fontStyle: "italic";
+    border: "none";
+    borderBottomColor: "black";
+    borderBottom: "1px solid lightgray";
+    borderBottomWidth: "1px solid ";
+    width: "90%"; */
+}
+.savebutton {
+    position: "absolute";
+    bottom: "290px";
+    right: "50px"
+}
+.adddocument-button {
+    font-size: medium;
+    padding: 10px 20px;
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    position: absolute;
+    /*optional*/
+    font-family: arial, sans-serif;
+    /*input has OS specific font-family*/
+    right: 0;
+    bottom: 0;
+    color: #069;
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 10px;
+}
+.addquestion-button{
+    font-size: medium;
+    font-size: medium;
+    /* padding: 10px 20px; */
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    position: absolute;
+    /*optional*/
+    font-family: arial, sans-serif;
+    /*input has OS specific font-family*/
+    right: 30%;
+    bottom: 19%;
+    /* right: 0%;
+    bottom: 0%; */
+    color: #069;
+    text-decoration: underline;
+    cursor: pointer;
+    /* margin-left: 10px; */
+    margin: 10px;
+}
+.backbutton{
+    font-size: medium;
+    padding: 10px 20px;
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    position: absolute;
+    /*optional*/
+    font-family: arial, sans-serif;
+    /*input has OS specific font-family*/
+    right: 10;
+    bottom: 127px;
+    color: #069;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 10px;
+    /* margin: 10px; */
+  }
+  .savejson_btn{
+    position: absolute;
+    top: 75%;
+    right: 46%;
+  }
+ 

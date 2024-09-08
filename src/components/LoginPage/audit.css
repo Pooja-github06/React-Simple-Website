@@ -1,0 +1,921 @@
+
+/* DivSegments.css */
+
+.parent-div {
+    /* 100vh is the full viewport height minus the total height of the header and footer */
+    /* overflow-y: hidden; */
+    /* Add a scrollbar if the content overflows the height of the main area */
+    /* justify-content: space-between; */
+    /* display: flex;
+    flex-direction: row;
+    padding: 90px; */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /* overflow: hidden; */
+}
+
+
+
+.outer {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:rgba(255,255,255,0.75);
+    
+    
+  }
+  
+  .middle {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    /* Whatever width you want */
+  }
+
+
+.text1 {
+    text-align: left;
+    margin-top: 0px;
+    float: left;
+    clear: both;
+}
+
+.text2 {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.imgsize {
+    width: 39rem;
+    height: 208px;
+}
+
+.text222 {
+    font-family: 'Work Sans';
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+.text223 {
+    font-size: 5px;
+}
+
+.text221 {
+    font-weight: bold;
+    font-family: 'Work Sans';
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+.Locatiocls {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.Locationclass {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.child-divv1 {
+    position: relative;
+    padding: 10px;
+    /* flex: 1 1; */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 5px;
+}
+
+.child-divv2 {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    min-height: 24px!important
+}
+
+.container {
+    height: calc(100vh - 150px);
+    display: flex;
+    padding: 90px;
+    background-color: #ededed;
+}
+
+.child-div1 {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    min-height: 24px!important
+}
+
+.child-div3-1 {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    min-height: 24px!important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.child-div2 {
+    flex: 1;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    margin-bottom: 10px;
+    max-height: 81%;
+}
+
+.child-div3 {
+    /* position: relative; */
+    padding: 10px;
+    max-height: 81%;
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+.child-div4 {
+    position: relative;
+    padding: 10px;
+    flex: 0.5;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+.myactionbtn {
+    padding: 10px;
+    /* margin: -1px; */
+    display: flex;
+}
+
+.mybutton {
+    height: 20px;
+    width: 70px;
+    position: absolute;
+    bottom: 0;
+    background-color: #0E4681;
+    right: 0;
+    color: white;
+    margin: inherit;
+}
+
+.mybutton-mainbt {
+    height: 27px;
+    border-radius: 25.5px;
+    width: 77px;
+    /* position: absolute; */
+    /* bottom: 0; */
+    background-color: #0E4681;
+    right: 0;
+    color: white;
+    margin: inherit;
+}
+
+.mybutton-mainbt-greyout {
+    height: 27px;
+    border-radius: 25.5px;
+    width: 77px;
+    /* position: absolute; */
+    /* bottom: 0; */
+    background-color: gray;
+    right: 0;
+    color: white;
+    margin: inherit;
+    pointer-events: none;
+}
+
+.myclickbutton {
+    height: 20px;
+    width: 135px;
+    background-color: #0E4681;
+    border: 0;
+    border-radius: 15px;
+    font-style: normal;
+    color: #fff;
+}
+
+#header-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.mybutton-mainbtgreen {
+    height: 27px;
+    border-radius: 25.5px;
+    width: 77px;
+    /* position: absolute; */
+    /* bottom: 0; */
+    background-color: green;
+    right: 0;
+    color: white;
+    margin: inherit;
+}
+
+.mybutton-mainbtred {
+    height: 27px;
+    border-radius: 25.5px;
+    width: 77px;
+    /* position: absolute; */
+    /* bottom: 0; */
+    background-color: red;
+    right: 0;
+    color: white;
+    margin: inherit;
+}
+
+#Actionupload-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#UploadDocimg {
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 5px;
+}
+
+#UploadDoctitle {
+    flex-direction: column;
+    flex: 1;
+    display: grid;
+    align-content: space-between;
+}
+
+#icon {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+#actionicon {
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+    margin-right: 2px;
+}
+#captureCropimg{
+    display: flex;
+    /* height: 400px; */
+    margin: auto;
+}
+#captureimg {
+    display: flex;
+    height: 60%;
+    margin: auto;
+}
+#captureUserimg{
+    display: flex;
+    /* height: 400px; */
+    margin: auto;
+}
+#iconcap {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    left: 46.5%;
+    right: 30%;
+    margin-top: 30px;
+}
+#mirrorimg{
+    -webkit-box-reflect: right;
+
+}
+
+/* 
+.btncap {
+    margin-right: 10px;
+    background-color: #0E4681;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    left: 46.5%;
+    right: 30%;
+    margin-top: 30px;
+} */
+
+.btncap {
+    width: 19%;
+    height: 38%;
+    position: relative;
+    margin-right: 10px;
+    margin-top: 30px;
+    background-color: white;
+    color: black;
+    border: 2px solid #0E4681;
+}
+
+.btncap1 {
+    width: 19%;
+    height: 38%;
+    position: relative;
+    margin-right: 10px;
+    margin-top: 30px;
+    background-color: white;
+    color: black;
+    border: 2px solid #0E4681;
+}
+
+.btncap:hover {
+    background-color: #0E4681;
+    color: white;
+}
+
+.btncap1:hover {
+    background-color: #0E4681;
+    color: white;
+}
+
+.button-container {
+    border-radius: 4.5px;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.my-toolbar {
+    display: flex;
+    justify-content: center;
+    font-size: 16px
+}
+
+.button-container-mainbt {
+    border-radius: 9.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#capture-btn {
+    /* Add margin to the top of the capture button to separate it from the video stream */
+    margin-top: 10px;
+}
+
+.icon-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 0 10px;
+    padding: 0;
+}
+
+.icon-button:hover {
+    color: #555;
+}
+
+.icon-upload:before {
+    content: "\f093";
+}
+
+.icon-camera:before {
+    content: "\f030";
+}
+
+.icon-recording:before {
+    content: "\f03d";
+}
+
+.btn {
+    /* border: 2px solid black; */
+    margin-right: 35px;
+    color: #0E4681;
+    background-color: white;
+    /* font-style: rgb(38, 105, 230); */
+    padding: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 30%;
+    border: 1px solid rgb(14, 70, 129);
+}
+
+.info:hover {
+    background: #0E4681;
+    color: white;
+}
+
+.listbtn {
+    margin: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: navy;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.button-group-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    color: navy;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.buttons i {
+    transition: transform 0.3s ease;
+}
+
+.buttons.selected {
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons.selected i {
+    transform: rotate(45deg);
+}
+
+.modal-bodysendcall {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.modal-containers {
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-contents {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.modal-headers {
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.modal-bodys {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-inputs {
+    margin-bottom: 27px!important;
+    width: 100%!important;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+
+.modal-buttons1{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    flex-direction: row-reverse;
+}
+
+.mybutton-mainbt1 {
+    height: 27px;
+    border-radius: 25.5px;
+    width: 77px;
+    /* position: absolute; */
+    /* bottom: 0; */
+    background-color: #0E4681;
+    right: 0;
+    color: white;
+    margin: inherit;
+}
+
+
+.livetext{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+
+
+
+
+.liveliness{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+
+
+.modal-inputs-tab {
+    margin-bottom: 27px!important;
+    width: 100%!important;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.modal-buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.modal-buttons button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.modal_btn{
+    background-color: #0E4681;
+    color: #fefefe;
+}
+.modal-buttons button.discard {
+    background-color: #ccc;
+    color: #000;
+}
+
+.modal-buttons button.save {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.modal-container-strmmodal-1{
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-container-strmmodal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content-strmmodal {
+    /* padding: 5%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 90%; */
+    max-width: 1200px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+.modal-content-strmmodal-1{
+      /* padding: 5%; */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 58%;
+      max-width: 1200px;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.modal-left-strmmodal {
+    width: 60%;
+    height: 100%;
+    position: relative;
+}
+.modal-left-strmmodal-2{
+    /* margin-bottom: 63px; */
+    width: 40%;
+    height: 100%;
+    padding: 10px 0px 0px 70px;
+
+    /* padding: 40px 30px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* padding-left: 4%;
+    width: 63%;
+    height: 100%;
+    position: relative; */
+
+}
+
+.modal-left-strmmodal-1{
+        /* margin-bottom: 63px; */
+        width: 40%;
+        height: 100%;
+        padding: 10px 0px 0px 70px;
+        /* padding: 40px 30px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-content: center;
+}
+.modal-left-strmmodal video {
+    width: 75%;
+    height: 100%;
+    object-fit: cover;
+    margin: 2%;
+}
+
+.modal-right-strmmodal {
+    margin-bottom: 63px;
+    width: 40%;
+    height: 100%;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input-container-strmmodal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid #ddd;
+    padding: 10px;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+
+input:focus {
+    outline: none;
+    border-bottom-color: #3b88fd;
+}
+
+.button-container-strmmodal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 186px;
+}
+
+button {
+    border: none;
+    background-color: #3b88
+}
+
+.warning {
+    color: red;
+    display: flex;
+    align-items: center;
+}
+
+.warning img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.borderContainer {
+    border: 1px solid black;
+    /* padding: 10px; */
+    padding: inherit;
+    margin-top: 26px;
+    height: 29px;
+}
+
+.textBox-comp {
+    border: none!important;
+    border-bottom: 1px solid gray!important;
+    outline: none!important;
+    padding: 5px!important;
+}
+
+.placeholderStyle-comp {
+    color: gray;
+}
+
+.crossButton {
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    margin-right: 10px;
+}
+
+.crossButton-modal {
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #0E4681;
+    color: white;
+    margin-right: 10px;
+    position: fixed;
+    right: 0;
+}
+
+.tickButton {
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    color: white;
+}
+
+.endCallButton {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid red;
+    border-radius: 8px;
+    /* padding: 10px; */
+    background-color: red;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    width: 112px;
+}
+
+.endCallLogo {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+
+.endcall-greyout {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid gray;
+    border-radius: 8px;
+    /* padding: 10px; */
+    background-color: gray;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    width: 112px;
+    
+}
+
+  .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .ReactCrop__image {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+  }
+
+.ImageIconsStyle{
+    color: #0E4681;
+
+}
+
+.ImageIconGray-1{
+    color: gray;
+}
+
+  .ImageIconGray{
+    color: gray;
+    pointer-events: none;
+  }
+  .ImageIcons{
+    color: black;
+  }
+  
+
+  #imagemirror1{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+  #imagemirror2{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+
+  
+.flip-box {
+    background-color: transparent;
+    width: 100%;
+
+    perspective: 1000px;
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    
+  }
+  
+  .flip-box ,.flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+
