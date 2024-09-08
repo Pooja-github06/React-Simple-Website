@@ -14,7 +14,8 @@ import image3 from "../images/wallpaper.jpg"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Products from "../Products/Products"
+import Products from "../Products/Products";
+import Subscribe from "../components/Subscribe/Subscribe"
 
 
 const MainScreen = () => {
@@ -103,6 +104,8 @@ const MainScreen = () => {
                 <Products />
                 {/* Banner */}
 
+                {/* Subscribe page */}
+                <Subscribe />
                 <Banner />
                 <Footer />
             </div >
