@@ -16,7 +16,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Products from "../Products/Products";
 import Subscribe from "../components/Subscribe/Subscribe"
-
+import Testimonial from "../components/Testimonial/Testimonial"
 
 const MainScreen = () => {
 
@@ -107,6 +107,9 @@ const MainScreen = () => {
                 {/* Subscribe page */}
                 <Subscribe />
                 <Banner />
+                {/* Testimonial */}
+                <Testimonial />
+                {/* Footer page */}
                 <Footer />
             </div >
 

@@ -22,7 +22,7 @@ import Nav from 'react-bootstrap/Nav';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faPhone, faMessage } from '@fortawesome/free-solid-svg-icons'
 
-const Homepage = () => {
+const Homepage = ({ handleOrderPopup }) => {
     const navigate = useNavigate();
 
     const handlechange = () => {
@@ -116,7 +116,7 @@ const Homepage = () => {
                         <Nav.Link onClick={() => navigate("/Contact")}>Contact</Nav.Link>
                         <Nav.Link onClick={() => navigate("/Register")}>Register</Nav.Link>
                         <Nav.Link onClick={() => navigate("/Login")}>Login</Nav.Link>
-                        <Button style={{ backgroundColor: 'white' }} variant="outline-success">Order Online</Button>{' '}
+                        <Button onClick={() => handleOrderPopup()} style={{ backgroundColor: 'white' }} variant="outline-success">Order Online</Button>{' '}
                     </Nav>
 
 
