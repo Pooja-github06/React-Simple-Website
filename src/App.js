@@ -3,6 +3,8 @@ import React, { Fragment, useState, useEffect } from 'react';
 import axios from 'axios';
 import image from './images/Shreejalogo.png'
 import './App.css';
+import "aos/dist/aos.css";
+import Popup from "../src/components/OrderPopup/Popup.js"
 import { useMediaQuery } from 'react-responsive'
 // import Register from './App/Components/Register.js'
 import {
@@ -35,7 +37,11 @@ const App = () => {
     { minDeviceWidth: 1224 },
     { deviceWidth: 1600 } // `device` prop
   )
+  const [orderPopup, setOrderPopup] = React.useState(false);
 
+  const handleOrderPopup = () => {
+    setOrderPopup(!orderPopup);
+  };
   const apicall = () => {
     // console.log('test')
 
@@ -70,14 +76,17 @@ const App = () => {
           <Router>
             <div>
 
-              <Homepage />
+              <Homepage handleOrderPopup={handleOrderPopup} />
+              <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
 
               <Routes>
 
                 <Route path="/Login1" element={<Login1 />} />
                 <Route path="/About" element={
 
-                  <About />}
+                  // <About />}?
+                  <MainScreen />
+                }
                 />
 
                 <Route path="/Contact" element={
@@ -108,6 +117,7 @@ const App = () => {
 
           </Router>
         )}
+
         {/* </MediaQuery> */}
         {/* <Footer /> */}
       </div>
